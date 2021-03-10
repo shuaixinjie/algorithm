@@ -1,10 +1,12 @@
 package main
 
 import (
+	"algorithm/practice_1"
 	"fmt"
 )
 
 func main() {
-	//国际惯例,因为打开了module模式，不要go.mod编译会报错
-	fmt.Println("hello,world!")
+	var aa [][]string = [][]string{{"B", "C"}, {"D", "B"}, {"C", "A"}}
+
+	fmt.Println(practice_1.DestCity(aa))
 }
